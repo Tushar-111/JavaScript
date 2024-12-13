@@ -10,4 +10,8 @@ let valueInNumer = Number(score)
 let isLoggedIn = 1
 
 let isBoolean = Boolean(isLoggedIn)
-console.log(isBoolean)
+//onsole.log(isBoolean)
+
+//isBoolean = "Tushar"
+// console.log(isBoolean)
+// console.log(typeof isBoolean) - string
