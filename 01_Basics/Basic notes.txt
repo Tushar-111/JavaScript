@@ -1,0 +1,19 @@
+Constant Reference, Not Immutable Value:
+
+If a const variable refers to an object or an array, the reference cannot change, but the contents of the object/array can still be modified.
+javascript
+Copy code
+const arr = [1, 2, 3];
+arr.push(4); // Allowed
+console.log(arr); // [1, 2, 3, 4]
+
+arr = [5, 6, 7]; // Error: Assignment to constant variable
+
+Feature	               let	                  const
+Reassignment	      Allowed	             Not allowed
+Initialization   	 Optional	        Mandatory at declaration
+Scope	             Block-scoped	       Block-scoped
+Mutability	         Mutable	        Immutable reference
+
+Use const when the value of a variable should not change (e.g., configuration values, constants).
+Use let for variables whose values may change over time (e.g., counters, loop variables).
